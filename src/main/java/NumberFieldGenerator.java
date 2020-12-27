@@ -1,3 +1,4 @@
-public interface NumberFieldGenerator extends FieldGenerator{
-
+public interface NumberFieldGenerator extends FieldGenerator<Number>{
+    @Override
+    Number generate();
 }

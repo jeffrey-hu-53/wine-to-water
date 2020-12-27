@@ -1,2 +1,3 @@
-public interface FieldGenerator {
+public interface FieldGenerator<T> {
+    T generate();
 }

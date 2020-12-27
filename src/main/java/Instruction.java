@@ -4,22 +4,19 @@ import org.yaml.snakeyaml.Yaml;
 
 
 public class Instruction {
-    private Map<String, Object> instructions;
-    public Instruction(){
-        instructions = generateInstructions();
+    private String fieldName;
+    private FieldGenerator<?> fg;
+    public Instruction(String fieldName, FieldGenerator<?> fg){
+        this.fieldName = fieldName;
+        this.fg = fg;
     }
-    private Map<String, Object> generateInstructions(){
-        Yaml yaml = new Yaml();
-        InputStream inputStream = this.getClass()
-                .getClassLoader()
-                .getResourceAsStream("instructions.yaml");
-        //place the yaml file in the main/resources folder
-        Map<String, Object> map = (Map<String, Object>) yaml.load(inputStream);
-        System.out.println(map);
-        /**
-         * try reading YAML file here and converting it into a map.
-         */
-        return null;
+
+    public void apply(Map<String, String> testCase){
+        if (fg != null){
+            testCase.put(fieldName, (String) fg.generate());
+        }
+        else{
+            System.out.println(fieldName + " instructions could not by applied. Field Generator is null.");
+        }
     }
-    //Yaml yaml = new Yaml();
 }

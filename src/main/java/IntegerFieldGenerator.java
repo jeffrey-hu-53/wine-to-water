@@ -1,5 +1,12 @@
 public class IntegerFieldGenerator implements NumberFieldGenerator{
-    IntegerFieldGenerator(){
+    double low, high;
+    public IntegerFieldGenerator(double low, double high){
+        this.low = low;
+        this.high = high;
+    }
 
+    @Override
+    public Integer generate(){
+        return (int)(Math.random() * (high - low) + low);
     }
 }

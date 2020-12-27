@@ -1,0 +1,19 @@
+seed: seedPathGoesHere
+number: 100
+instructions:
+  instruction1:
+    fieldName: A
+    fieldType: double
+    values: (0.0, 10.0)
+  instruction2:
+    fieldName: B
+    fieldType: integer
+    values: (2, 7)
+  instruction3:
+    fieldName: C
+    fieldType: pickOne
+    values:  (Jeff, Lixia, John, Peter)
+  instruction4:
+    fieldName: D
+    fieldType: string
+    values: (3, 8)
