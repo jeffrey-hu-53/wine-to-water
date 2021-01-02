@@ -1,4 +1,6 @@
-public class DoubleFieldGenerator implements FieldGenerator{
+package fieldGenerator;
+
+public class DoubleFieldGenerator implements FieldGenerator {
     double low, high;
     int roundPlaces;
     public DoubleFieldGenerator(double low, double high, int roundPlaces){

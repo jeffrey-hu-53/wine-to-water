@@ -1,4 +1,6 @@
-public class IntegerFieldGenerator implements FieldGenerator{
+package fieldGenerator;
+
+public class IntegerFieldGenerator implements FieldGenerator {
     double low, high;
     public IntegerFieldGenerator(double low, double high){
         this.low = low;

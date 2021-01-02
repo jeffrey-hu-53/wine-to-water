@@ -1,6 +1,6 @@
 seed: "src/test/resources/seed.csv"
 output: "src/test/resources/output.csv"
-number: 15000
+number: 10
 instructions:
   - fieldName: Field1
     fieldType: string
@@ -10,7 +10,7 @@ instructions:
     values: (10, 100)
   - fieldName: Field3
     fieldType: pickOne
-    values: (Hu, Sun, Schulze)
+    values: (Hello, Hey, Hi, Greetings)
   - fieldName: Field4
     fieldType: double
     values: (100, 1000, 2)

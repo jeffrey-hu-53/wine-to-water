@@ -1,3 +1,7 @@
+package testGenerator;
+
+import fieldGenerator.FieldGenerator;
+
 import java.util.Map;
 
 public class Instruction {

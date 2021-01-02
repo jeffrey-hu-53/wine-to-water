@@ -1,4 +1,6 @@
 import org.junit.Test;
+import testGenerator.TestCaseGenerator;
+
 import java.io.IOException;
 
 public class TestYaml {

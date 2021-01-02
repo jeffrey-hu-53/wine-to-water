@@ -1,4 +1,6 @@
-public class PickOneFieldGenerator implements FieldGenerator<String>{
+package fieldGenerator;
+
+public class PickOneFieldGenerator implements FieldGenerator {
     private String[] listToChooseFrom;
 
     public PickOneFieldGenerator(String[] values){

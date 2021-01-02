@@ -1,9 +1,6 @@
-import org.yaml.snakeyaml.Yaml;
+package testGenerator;
 
-import java.io.InputStream;
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
 public class Configuration {
     private String seedPath, outputPath;

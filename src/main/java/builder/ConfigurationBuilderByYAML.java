@@ -1,11 +1,16 @@
+package builder;
+
+import fieldGenerator.*;
+import testGenerator.Configuration;
 import org.yaml.snakeyaml.Yaml;
+import testGenerator.Instruction;
 
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-public class ConfigurationBuilderByYAML implements ConfigurationBuilder{
+public class ConfigurationBuilderByYAML implements ConfigurationBuilder {
     private String configPath;
     public ConfigurationBuilderByYAML(String configPath){
         this.configPath = configPath;

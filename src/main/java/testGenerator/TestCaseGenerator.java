@@ -1,3 +1,7 @@
+package testGenerator;
+
+import builder.ConfigurationBuilderByYAML;
+
 import java.io.IOException;
 
 public class TestCaseGenerator {

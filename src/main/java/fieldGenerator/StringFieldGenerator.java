@@ -1,6 +1,8 @@
+package fieldGenerator;
+
 import java.util.Random;
 
-public class StringFieldGenerator implements FieldGenerator<String>{
+public class StringFieldGenerator implements FieldGenerator {
     private int min, max;
     public StringFieldGenerator(int min, int max){
         this.min = min;

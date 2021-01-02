@@ -1,5 +1,8 @@
+package testGenerator;
+
 import com.opencsv.CSVReader;
 import com.opencsv.CSVWriter;
+import testGenerator.Configuration;
 
 import java.io.FileWriter;
 import java.io.IOException;
