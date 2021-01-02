@@ -1,19 +1,16 @@
-seed: seedPathGoesHere
-number: 100
+seed: "src/test/resources/seed.csv"
+output: "src/test/resources/output.csv"
+number: 15000
 instructions:
-  instruction1:
-    fieldName: A
-    fieldType: double
-    values: (0.0, 10.0)
-  instruction2:
-    fieldName: B
-    fieldType: integer
-    values: (2, 7)
-  instruction3:
-    fieldName: C
-    fieldType: pickOne
-    values:  (Jeff, Lixia, John, Peter)
-  instruction4:
-    fieldName: D
+  - fieldName: Field1
     fieldType: string
-    values: (3, 8)
+    values: (3, 5)
+  - fieldName: Field2
+    fieldType: integer
+    values: (10, 100)
+  - fieldName: Field3
+    fieldType: pickOne
+    values: (Hu, Sun, Schulze)
+  - fieldName: Field4
+    fieldType: double
+    values: (100, 1000, 2)

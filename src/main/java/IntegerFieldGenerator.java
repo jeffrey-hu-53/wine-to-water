@@ -1,4 +1,4 @@
-public class IntegerFieldGenerator implements NumberFieldGenerator{
+public class IntegerFieldGenerator implements FieldGenerator{
     double low, high;
     public IntegerFieldGenerator(double low, double high){
         this.low = low;
@@ -6,7 +6,7 @@ public class IntegerFieldGenerator implements NumberFieldGenerator{
     }
 
     @Override
-    public Integer generate(){
-        return (int)(Math.random() * (high - low) + low);
+    public String generate(){
+        return String.valueOf((int)(Math.random() * (high - low) + low));
     }
 }
