@@ -1,4 +1,6 @@
 # wine-to-water
+
+<b> User Story </b>
 TestCaseGenerator class contains one method generateTests. It takes in the YAML configuration path as a String. The configuration should have the seed path and the test case 
 output file path. Below is a sample seed.csv and a sample YAML configuration file.
 
